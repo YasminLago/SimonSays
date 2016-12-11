@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colorBotones">
+        <item>@color/colorBtnVerde</item>
+        <item>@color/colorBtnRojo</item>
+        <item>@color/colorBtnAmarillo</item>
+        <item>@color/colorBtnAzul</item>
+    </array>
+
+    <array name="drawBtns">
+        <item>@drawable/boton_verde</item>
+        <item>@drawable/boton_rojo</item>
+        <item>@drawable/boton_amarillo</item>
+        <item>@drawable/boton_azul</item>
+    </array>
+
+    <array name="botones">
+        <item>@id/btnVerde</item>
+        <item>@id/btnRojo</item>
+        <item>@id/btnAmarillo</item>
+        <item>@id/btnAzul</item>
+    </array>
+</resources>

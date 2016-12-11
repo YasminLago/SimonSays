@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/colorFondo"
+    tools:context="com.example.yasmin.myapplication.MainActivity">
+
+    <Space
+        android:layout_height="25dp"
+        android:layout_width="1dp" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:onClick="empezar"
+        android:text="@string/btnStart"
+        android:textAllCaps="false"
+       />
+
+    <Space
+        android:layout_height="25dp"
+        android:layout_width="0dp" />
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:rowCount="2"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/btnVerde"
+            android:layout_width="106dp"
+            android:layout_height="96dp"
+            android:background="@color/colorBtnVerde"
+            android:onClick="efectoBoton"
+            android:tag="0"/>
+
+        <Button
+            android:id="@+id/btnRojo"
+            android:layout_width="106dp"
+            android:layout_height="96dp"
+            android:background="@color/colorBtnRojo"
+            android:onClick="efectoBoton"
+            android:tag="1"/>
+
+        <Button
+            android:id="@+id/btnAmarillo"
+            android:layout_width="106dp"
+            android:layout_height="96dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@color/colorBtnAmarillo"
+            android:onClick="efectoBoton"
+            android:tag="2"/>
+
+
+        <Button
+            android:id="@+id/btnAzul"
+            android:layout_width="106dp"
+            android:layout_height="96dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@color/colorBtnAzul"
+            android:onClick="efectoBoton"
+            android:tag="3"/>
+
+    </GridLayout>
+
+</LinearLayout>
