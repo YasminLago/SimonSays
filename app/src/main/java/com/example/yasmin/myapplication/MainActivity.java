@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     Resources resources;
     int [] colorBotones;
-    int blanco = Color.WHITE;
+    int fondo = Color.parseColor("#2E2E2E");
 
     int [] sonidos = {
             R.raw.sonido_verde,
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
      * @param posicionBotn
      */
     public void parpadear(final int posicionBotn) {
-        findViewById(botones[posicionBotn]).setBackgroundColor(blanco);
+        findViewById(botones[posicionBotn]).setBackgroundColor(fondo);
         final MediaPlayer reproducir = MediaPlayer.create(this, sonidos[posicionBotn]);
         reproducir.start();
         findViewById(botones[posicionBotn]).postDelayed(new Runnable() {
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 reproducir.reset();
                 findViewById(botones[posicionBotn]).setBackgroundColor(colorBotones[posicionBotn]);
             }
-        }, 300);
+        }, 400);
     }
 
     /**
